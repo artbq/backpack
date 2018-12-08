@@ -1,3 +1,5 @@
 [user]
 	email = art@arttsu.com
 	name = Artem Tseranu
+[core]
+	editor = nvim
