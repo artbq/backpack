@@ -115,3 +115,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias ev='expressvpn'
+alias evst='expressvpn status'
+alias evc='expressvpn connect'
+alias evd='expressvpn disconnect'
