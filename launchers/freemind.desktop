@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=FreeMind
+Exec=freemind
+Icon=/home/art/backpack/launchers/icons/freemind.png
+Terminal=false
