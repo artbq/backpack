@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Syncthing
+Exec=/home/art/AppImages/SyncthingGTK.AppImage
+Icon=/home/art/backpack/launchers/icons/syncthing.png
+Terminal=false
