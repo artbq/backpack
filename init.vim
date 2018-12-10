@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'arcticicestudio/nord-vim'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
