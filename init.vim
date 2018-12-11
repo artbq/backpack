@@ -34,6 +34,14 @@ let g:nord_italic = 1
 let g:nord_underline = 1
 let g:nord_italic_comments = 1
 
+augroup nord-overrides
+  autocmd!
+
+  autocmd ColorScheme nord highlight rubySymbol cterm=NONE ctermfg=2
+  autocmd ColorScheme nord highlight rubyStringDelimiter ctermfg=2
+  autocmd ColorScheme nord highlight rubyInstanceVariable ctermfg=6
+augroup END
+
 set tabstop=2
 set expandtab
 set shiftwidth=2
