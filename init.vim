@@ -16,6 +16,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'keith/rspec.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'elixir-lang/vim-elixir'
+Plug 'cespare/vim-toml'
 
 Plug 'arcticicestudio/nord-vim'
 
@@ -40,6 +41,8 @@ augroup nord-overrides
   autocmd ColorScheme nord highlight rubySymbol cterm=NONE ctermfg=2
   autocmd ColorScheme nord highlight rubyStringDelimiter ctermfg=2
   autocmd ColorScheme nord highlight rubyInstanceVariable ctermfg=6
+
+  autocmd ColorScheme nord highlight tomlTable ctermfg=14
 augroup END
 
 set tabstop=2
