@@ -1,0 +1,8 @@
+snippet case
+case $1
+when $2
+	$0
+else
+	raise "Unexpected value: #{$1.inspect}"
+end
+endsnippet
