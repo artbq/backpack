@@ -6,10 +6,12 @@ Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
-set nowrap
-
 let g:nord_italic = 1
 let g:nord_underline = 1
 let g:nord_italic_comments = 1
 
+let g:UltiSnipsExpandTrigger = '<A-e>'
+
 colorscheme nord
+
+set nowrap
