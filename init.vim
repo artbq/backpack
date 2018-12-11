@@ -1,30 +1,52 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'Valloric/YouCompleteMe'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'arcticicestudio/nord-vim'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+Plug 'mileszs/ack.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-vinegar'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'tpope/vim-fugitive'
+
+Plug 'vim-ruby/vim-ruby'
+Plug 'keith/rspec.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'elixir-lang/vim-elixir'
+
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
+
+let g:UltiSnipsExpandTrigger = '<A-e>'
+let g:UltiSnipsListSnippets = '<A-l>'
+let g:UltiSnipsJumpForwardTrigger = '<A-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<A-k>'
+
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+
+let g:buffergator_viewport_split_policy = 'B'
 
 let g:nord_italic = 1
 let g:nord_underline = 1
 let g:nord_italic_comments = 1
 
-let g:UltiSnipsExpandTrigger = '<A-e>'
-
-colorscheme nord
-
-set nowrap
-
 set tabstop=2
 set expandtab
 set shiftwidth=2
 
+set ignorecase
+set smartcase
+
+set nowrap
+
 set relativenumber
 set number
 
-set ignorecase
-set smartcase
+colorscheme nord
 
 let mapleader = ','
 
