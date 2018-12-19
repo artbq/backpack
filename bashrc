@@ -129,3 +129,6 @@ alias gc='git commit'
 alias gco='git checkout'
 alias gp='git push'
 alias gup='git pull'
+
+alias ni='nvim'
+alias nipl='nvim +PlugInstall +qa'
