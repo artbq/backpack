@@ -11,6 +11,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-syntastic/syntastic'
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'keith/rspec.vim'
@@ -30,6 +31,13 @@ let g:UltiSnipsJumpBackwardTrigger = '<A-k>'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
 let g:buffergator_viewport_split_policy = 'B'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+let g:rustfmt_autosave = 1
 
 let g:nord_italic = 1
 let g:nord_underline = 1
@@ -56,6 +64,10 @@ set nowrap
 
 set relativenumber
 set number
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 colorscheme nord
 
