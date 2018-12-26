@@ -66,10 +66,6 @@ set nowrap
 set relativenumber
 set number
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 colorscheme nord
 
 let mapleader = ','
