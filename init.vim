@@ -18,6 +18,7 @@ Plug 'keith/rspec.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'cespare/vim-toml'
+Plug 'lervag/vimtex'
 
 Plug 'arcticicestudio/nord-vim'
 
