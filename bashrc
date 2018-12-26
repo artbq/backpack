@@ -132,3 +132,5 @@ alias gup='git pull'
 
 alias ni='nvim'
 alias nipl='nvim +PlugInstall +qa'
+
+source /usr/local/share/chruby/chruby.sh
