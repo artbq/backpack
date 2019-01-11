@@ -129,8 +129,11 @@ alias gc='git commit'
 alias gco='git checkout'
 alias gp='git push'
 alias gup='git pull'
+alias gb='git branch'
 
 alias ni='nvim'
 alias nipl='nvim +PlugInstall +qa'
+
+alias be='bundle exec'
 
 source /usr/local/share/chruby/chruby.sh
