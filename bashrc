@@ -137,6 +137,7 @@ alias nipl='nvim +PlugInstall +qa'
 alias be='bundle exec'
 
 source /usr/local/share/chruby/chruby.sh
+chruby 2.6
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
