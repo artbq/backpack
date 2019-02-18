@@ -24,10 +24,10 @@ Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
-let g:UltiSnipsExpandTrigger = '<A-e>'
-let g:UltiSnipsListSnippets = '<A-l>'
-let g:UltiSnipsJumpForwardTrigger = '<A-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<A-k>'
+let g:UltiSnipsExpandTrigger = '<C-e>'
+let g:UltiSnipsListSnippets = '<C-l>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
@@ -70,10 +70,10 @@ colorscheme nord
 
 let mapleader = ','
 
-nmap <A-h> <C-w>h
-nmap <A-j> <C-w>j
-nmap <A-k> <C-w>k
-nmap <A-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 nmap <Tab> gt
 nmap <S-Tab> gT
