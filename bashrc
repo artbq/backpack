@@ -136,6 +136,10 @@ alias nipl='nvim +PlugInstall +qa'
 
 alias be='bundle exec'
 
+alias tn='tmux new-session -s'
+alias ta='tmux a -t'
+alias tl='tmux ls'
+
 source /usr/local/share/chruby/chruby.sh
 chruby 2.6
 
