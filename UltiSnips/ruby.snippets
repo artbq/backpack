@@ -6,3 +6,13 @@ else
 	raise "Unexpected value: #{$1.inspect}"
 end
 endsnippet
+
+snippet scope
+scope :$1, ->$2 { $3 }
+endsnippet
+
+snippet scopedo
+scope :$1, ->$2 do
+	$3
+end
+endsnippet
