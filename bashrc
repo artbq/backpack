@@ -121,23 +121,35 @@ alias evst='expressvpn status'
 alias evc='expressvpn connect'
 alias evd='expressvpn disconnect'
 
+source $HOME/backpack/git-completion.bash
 alias g='git'
+__git_complete g __git_main
 alias gst='git status'
+__git_complete gst _git_status
 alias gd='git diff'
+__git_complete gd _git_diff
 alias ga='git add'
+__git_complete ga _git_add
 alias gc='git commit'
+__git_complete gc _git_commit
 alias gco='git checkout'
+__git_complete gco _git_checkout
 alias gp='git push'
+__git_complete gp _git_push
 alias gup='git pull'
+__git_complete gup _git_pull
 alias gb='git branch'
+__git_complete gb _git_branch
 
 alias ni='nvim'
-alias nipl='nvim +PlugInstall +qa'
+alias nipi='nvim +PlugInstall +qa'
 
 alias be='bundle exec'
 
+alias t='tmux'
 alias tn='tmux new-session -s'
 alias ta='tmux a -t'
+alias tk='tmux kill-session -t'
 alias tl='tmux ls'
 
 source /usr/local/share/chruby/chruby.sh
@@ -146,3 +158,5 @@ chruby 2.6
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source <(kubectl completion bash)
